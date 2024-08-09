@@ -6,17 +6,17 @@ const sumfetch = async (args: string[]): Promise<string> => {
    .        .        .        .        .        .        .        .        .
      .         .         .        _......____._        .         .           ABOUT
    .          .          . ..--'"" .           """"""---...          .
-                   _...--""        ................       '-.              . ${config.name}
+                   _...--""        ................       '-.              .     ${config.name}
                 .-'        ...:'::::;:::%:.::::::_;;:...     '-.
-             .-'       ..::::'''''   _...---'"""":::+;_::.      '.      .   爵 <u><a href="${config.repo}" target="_blank">Join us!</a></u>
+             .-'       ..::::'''''   _...---'"""":::+;_::.      '.      .       爵 <u><a href="${config.repo}" target="_blank">Join us!</a></u>
   .        .' .    ..::::'      _.-""               :::)::.       '.
          .      ..;:::'     _.-'         .             f::'::    o  _       ----------------
         /     .:::%'  .  .-"                        .-.  ::;;:.   /" "x
   .   .'  ""::.::'    .-"     _.--'"""-.           (   )  ::.::  |_.-' |     CONTACT
      .'    ::;:'    .'     .-" .d@@b.   |    .    . '-'   ::%::   |_ _/    .
-    .'    :,::'    /   . _'    8@@@@8   j      .-'       :::::      " o      <u><a href="mailto:${config.email}" target="_blank">${config.email}</a></u>
+    .'    :,::'    /   . _'    8@@@@8   j      .-'       :::::      " o          <u><a href="mailto:${config.email}" target="_blank">${config.email}</a></u>
     | .  :.%:' .  j     (_)    '@@@P'  .'   .-"         ::.::    .  f
-    |    ::::     (        -..____...-'  .-"          .::::'       /         <u><a href="https://github.com/${config.social.github}" target="_blank">github.com/${config.social.github}</a></u>
+    |    ::::     (        -..____...-'  .-"          .::::'       /             <u><a href="https://github.com/${config.social.github}" target="_blank">github.com/${config.social.github}</a></u>
 .   |    ':'::    '.                ..--'        .  .::'::   .    /         
     j     ':::::    '-._____...---""             .::%:::'       .'  .       ----------------
      |      ::.:%..             .       .    ...:,::::'       .'
