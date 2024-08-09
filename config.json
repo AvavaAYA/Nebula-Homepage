@@ -1,10 +1,10 @@
 {
   "readmeUrl": "https://raw.githubusercontent.com/Nebula-CTFTeam/Recruitment-2023/main/README.md",
   "title": "NebuTerm",
-  "name": "USTC-Nebula",
+  "name": "Nebula CTF Team",
   "ascii": "NEBULA",
   "social": {
-    "github": "github",
+    "github": "Nebula-CTFTeam",
     "linkedin": "linkedin"
   },
   "email": "a1Ub3n@outlook.com",
@@ -14,15 +14,6 @@
   "resume_url": "",
   "colors": {
     "light": {
-      "background": "#FBF1C9",
-      "foreground": "#3C3836",
-      "yellow": "#D79921",
-      "green": "#98971A",
-      "gray": "#7C6F64",
-      "blue": "#458588",
-      "red": "#CA2124"
-    },
-    "dark": {
       "background": "#1c1c1c",
       "foreground": "#EBDBB2",
       "yellow": "#D79921",
@@ -30,6 +21,15 @@
       "gray": "#A89984",
       "blue": "#458588",
       "red": "#CA2124"
+    },
+    "dark": {
+      "background": "#282a36",
+      "foreground": "#f8f8f2",
+      "yellow": "#ffb86c",
+      "green": "#50fa7b",
+      "gray": "#bd93f9",
+      "blue": "#8be9fd",
+      "red": "#ff5555"
     }
   }
 }

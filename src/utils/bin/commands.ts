@@ -2,6 +2,8 @@
 
 import * as bin from "./index";
 import config from "../../../config.json";
+import { getMembers } from "../api";
+import { getAwards } from "../api";
 
 // Help
 export const help = async (args: string[]): Promise<string> => {
@@ -33,8 +35,10 @@ export const about = async (args: string[]): Promise<string> => {
   return `Hi, we are ${config.name}. 
 Welcome to our website!
 More about us:
-'sumfetch' - short summary.
-'readme' - our recruitment readme.`;
+    'sumfetch' - short summary.
+    'members' - active members.
+    'awards' - selected awards.
+    'readme' - our recruitment requirements.`;
 };
 
 // Contact
@@ -50,25 +54,25 @@ export const github = async (args: string[]): Promise<string> => {
 };
 
 // Search
-export const google = async (args: string[]): Promise<string> => {
-  window.open(`https://google.com/search?q=${args.join(" ")}`);
-  return `Searching google for ${args.join(" ")}...`;
-};
+// export const google = async (args: string[]): Promise<string> => {
+//   window.open(`https://google.com/search?q=${args.join(" ")}`);
+//   return `Searching google for ${args.join(" ")}...`;
+// };
 
-export const duckduckgo = async (args: string[]): Promise<string> => {
-  window.open(`https://duckduckgo.com/?q=${args.join(" ")}`);
-  return `Searching duckduckgo for ${args.join(" ")}...`;
-};
+// export const duckduckgo = async (args: string[]): Promise<string> => {
+//   window.open(`https://duckduckgo.com/?q=${args.join(" ")}`);
+//   return `Searching duckduckgo for ${args.join(" ")}...`;
+// };
 
 export const bing = async (args: string[]): Promise<string> => {
   window.open(`https://bing.com/search?q=${args.join(" ")}`);
   return `Wow, really? You are using bing for ${args.join(" ")}?`;
 };
 
-export const reddit = async (args: string[]): Promise<string> => {
-  window.open(`https://www.reddit.com/search/?q=${args.join(" ")}`);
-  return `Searching reddit for ${args.join(" ")}...`;
-};
+// export const reddit = async (args: string[]): Promise<string> => {
+//   window.open(`https://www.reddit.com/search/?q=${args.join(" ")}`);
+//   return `Searching reddit for ${args.join(" ")}...`;
+// };
 
 // Typical linux commands
 export const echo = async (args: string[]): Promise<string> => {
@@ -80,55 +84,65 @@ export const whoami = async (args: string[]): Promise<string> => {
 };
 
 export const ls = async (args: string[]): Promise<string> => {
-  if (args.length === 1 && args[0].includes("-a")) {
+  if (args.length > 0 && /(-a|-al|-la)/i.test(args[0])) {
     return `.flag
-Welcome
-to
-USTC-Nebula's
-Homepage
-and
-We
-are
-Waiting
-for
-U`;
+.oh-you-found-it/
+Awards
+Members
+Welcome-to-USTC-Nebula-s-Homepage/
+and-We-are-Waiting-for-U/`;
   } else {
-    return `Welcome
-to
-USTC-Nebula's
-Homepage
-and
-We
-are
-Waiting
-for
-U`;
+    return `Awards
+Members
+Welcome-to-USTC-Nebula-s-Homepage/
+and-We-are-Waiting-for-U/`;
   }
+};
+
+export const env = async (args: string[]): Promise<string> => {
+  return `PWD=/root/Nebula-Homepage
+ARCH=loong-arch
+NAME=5950x-in-327
+OS=crabtux-nixos
+FLAG=flag{actually_theres_another_flag_here___join_us_ustc_nebula}
+REQUIREMENTS=1. you must come from USTC; 2. you must be interested in security!
+`;
 };
 
 export const cat = async (args: string[]): Promise<string> => {
   if (args.length === 1 && args[0] === ".flag") {
-    return `flag{0k_175_a_h1dd3n_s3c3rt_f14g}`;
+    return `flag{0k_175_a_h1dd3n_s3c3rt_f14g___please_join_us_ustc_nebula}`;
+  } else if (args.length === 1 && args[0] === "Awards") {
+    return getAwards();
+  } else if (args.length === 1 && args[0] === "Members") {
+    return getMembers();
   } else {
-    return `file not found, maybe you can consider about hidden files`;
+    return `file not found, maybe you can consider about Members / Awards / hidden files`;
   }
 };
 
-export const cd = async (args: string[]): Promise<string> => {
-  return `unfortunately, i cannot afford more directories.
-if you want to help, you can type 'donate'.`;
+export const members = async (args: string[]): Promise<string> => {
+  return getMembers();
 };
 
-export const date = async (args: string[]): Promise<string> => {
-  return new Date().toString();
+export const awards = async (args: string[]): Promise<string> => {
+  return getAwards();
 };
+
+export const cd = async (args: string[]): Promise<string> => {
+  return `Permission denied: root needed.`;
+};
+
+// export const date = async (args: string[]): Promise<string> => {
+//   return new Date().toString();
+// };
+
+// export const vi = async (args: string[]): Promise<string> => {
+//   return `woah, you still use 'vi'? just try 'vim'.`;
+// };
 
 export const vi = async (args: string[]): Promise<string> => {
-  return `woah, you still use 'vi'? just try 'vim'.`;
-};
-
-export const vim = async (args: string[]): Promise<string> => {
-  return `'vim' is so outdated. how about 'nvim'?`;
+  return `'vi / vim' is so outdated. how about 'nvim'?`;
 };
 
 export const nvim = async (args: string[]): Promise<string> => {
