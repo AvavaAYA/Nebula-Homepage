@@ -1,6 +1,6 @@
 # USTC-Nebula Homepage
 
-> [!INFO]
+> [!NOTE]
 > 托管在 vercel 上，由于免费版的限制目前放在个人仓库下，修改时可以提 PR 或者 dm 我成为合作者
 
 ## Develop
