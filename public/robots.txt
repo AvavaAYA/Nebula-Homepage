@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Disallow: /cgi-bin/
+# haha, nice try but we will never place a flag here. since it would be too boring.

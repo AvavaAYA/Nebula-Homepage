@@ -1,0 +1,35 @@
+{
+  "readmeUrl": "https://raw.githubusercontent.com/Nebula-CTFTeam/Recruitment-2024/main/README.md",
+  "title": "NebuTerm",
+  "name": "Nebula CTF Team",
+  "ascii": "NEBULA",
+  "social": {
+    "github": "Nebula-CTFTeam",
+    "linkedin": "linkedin"
+  },
+  "email": "a1Ub3n@outlook.com",
+  "ps1_hostname": "ustc-nebula",
+  "ps1_username": "ctfer",
+  "repo": "https://github.com/Nebula-CTFTeam/Recruitment-2024",
+  "resume_url": "",
+  "colors": {
+    "light": {
+      "background": "#282a36",
+      "foreground": "#f8f8f2",
+      "yellow": "#ffb86c",
+      "green": "#50fa7b",
+      "gray": "#bd93f9",
+      "blue": "#8be9fd",
+      "red": "#ff5555"
+    },
+    "dark": {
+      "background": "#282a36",
+      "foreground": "#f8f8f2",
+      "yellow": "#ffb86c",
+      "green": "#50fa7b",
+      "gray": "#bd93f9",
+      "blue": "#8be9fd",
+      "red": "#ff5555"
+    }
+  }
+}
